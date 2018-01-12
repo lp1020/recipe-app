@@ -1,0 +1,11 @@
+<div>
+  <h1><%= @course.name %></h1>
+  <h3><%= @course.time_of_day.capitalize %></h3>
+</div>
+
+<ul>
+  <% @recipes.each do |r| %>
+  <li><%= link_to r.title, recipe_path(r) %></li>
+  <% end %>
+  </ul>
+<%= link_to 'All courses', courses_path %>

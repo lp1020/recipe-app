@@ -1,0 +1,10 @@
+
+<ul>
+  <% @recipes.each do |r| %>
+  <li>
+    <div>
+      <h3><%= link_to r.title, course_path(r) %></h3>
+    </div>
+  </li>
+  <% end %>
+  </ul>

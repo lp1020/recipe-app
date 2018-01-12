@@ -1,0 +1,10 @@
+<h1>WELCOME TO THE RECIPE APP!</h1>
+<ul>
+  <% @courses.each do |c| %>
+  <li>
+    <div>
+      <h3><%= link_to c.name, course_path(c) %></h3>
+    </div>
+  </li>
+  <% end %>
+  </ul>
